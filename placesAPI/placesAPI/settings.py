@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'django_filters',
     'django_extensions',
+    'places',
 ]
 
 MIDDLEWARE = [
@@ -87,8 +89,8 @@ WSGI_APPLICATION = 'placesAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'placesAPI,
-        'USER': 'placesUser',
+        'NAME': 'placesapi',
+        'USER': 'placesuser',
         'PASSWORD': 'places',
         'HOST': 'localhost'
     }
